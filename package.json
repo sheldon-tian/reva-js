@@ -1,0 +1,19 @@
+{
+  "name": "reva",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/sheldon-tian/reva.git",
+  "author": "sheldon-tian <1401075750@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "rollup": "^4.9.5",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}
