@@ -3,12 +3,17 @@
         "target": "ES2015",
         "module": "ES2020",
         "moduleResolution": "Node",
-        "strict": true,
+        "strict": false,
         "outDir": "dist",
-        "esModuleInterop": true
+        "declarationDir": "declarations",
+        "esModuleInterop": true,
+        "jsx": "preserve",
+        "noImplicitAny": false,
+        "declaration": true,
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "src/index.tsx"
     ],
     "exclude": [
         "node_modules"

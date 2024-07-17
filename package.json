@@ -6,13 +6,16 @@
   "author": "sheldon-tian <1401075750@qq.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c"
+    "start": "yarn run clean && cross-env NODE_ENV=development rollup -w -c scripts/rollup.config.dev.mjs",
+    "build": "yarn run clean && cross-env NODE_ENV=production rollup -c scripts/rollup.config.prod.mjs && npm run copy",
+    "copy": "cp lib/reva.js example/public/reva.js && cp lib/declarations/index.d.ts example/public/reva.d.ts",
+    "clean": "rm -rf lib"
   },
   "dependencies": {
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
-    "rollup": "^4.9.5",
+    "rollup-plugin-serve": "^1.1.1",
     "tslib": "^2.6.2",
     "typescript": "^5.3.3"
   }

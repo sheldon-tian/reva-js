@@ -6,7 +6,7 @@ import json from '@rollup/plugin-json';
 export default {
 	input: 'src/index.ts',
 	output: {
-		file: 'lib/bundle.js',
+		file: 'lib/reva.js',
 		format: 'es',
         sourcemap: true,
 	},
