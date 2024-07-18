@@ -2,7 +2,7 @@
 A simple and easy-to-use front-end framework.
 
 Install
-npm i reva-js
+1. npm i reva-js
 
 Build [reva-js] bundle code.
 1. npm i
