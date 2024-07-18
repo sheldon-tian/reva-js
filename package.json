@@ -1,8 +1,8 @@
 {
-  "name": "reva",
+  "name": "reva-js",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://github.com/sheldon-tian/reva.git",
+  "repository": "https://github.com/sheldon-tian/reva-js.git",
   "author": "sheldon-tian <1401075750@qq.com>",
   "license": "MIT",
   "scripts": {

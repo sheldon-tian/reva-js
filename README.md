@@ -1,7 +1,10 @@
-# reva
+# reva-js
 A simple and easy-to-use front-end framework.
 
-Build [Reva] bundle code.
+Install
+npm i reva-js
+
+Build [reva-js] bundle code.
 1. npm i
 2. npm run build
 
