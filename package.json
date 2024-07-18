@@ -2,10 +2,10 @@
   "name": "reva-js",
   "version": "0.0.1",
   "description": "A simple and easy-to-use front-end framework.",
-  "main": "src/lib.js",
+  "main": "lib/reva.js",
   "files": [
-    "lib",
-    "declarations/index.d.ts"
+    "lib/reva.js",
+    "lib/declarations/index.d.ts"
   ],
   "keywords": [
     "reva",
