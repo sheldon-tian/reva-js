@@ -10,16 +10,21 @@ const isEvent = (key: string) => key.startsWith('on');
 const isProperty = (key: string) => key !== 'children' && !isEvent(key);
 const isNew = (prev, next) => key => prev[key] !== next[key];
 const isGone = (prev, next) => key => !(key in next);
+const isArray = (arr) => Array.isArray(arr);
 
 const createElement = (type, props, ...children) => {
+    let realChildren = children
+    // resolve props.children
+    if (children.length === 1 && isArray(children[0])) {
+        realChildren = children[0];
+    }
+
     return {
         type,
         props: {
             ...props,
-            children: children.map(child => (
-                typeof child === 'object'
-                    ? child
-                    : createTextElement(child)
+            children: realChildren.map(child => (
+                typeof child === 'object' ? child : createTextElement(child)
             )),
         },
     };
